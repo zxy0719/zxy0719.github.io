@@ -1,0 +1,35 @@
+title: Github repositories by Prateek Kumar
+email: prateek@prateekkumar.in
+description: >- # this means to ignore newlines until "baseurl:"
+  This website contains list of all the open source repositories on github by Prateek Kumar.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://prateekkumarweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: prateekkumarweb
+github_username: prateekkumarweb
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+#  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+#  - jekyll-mentions
+#  - jekyll-include-cache
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - README.md

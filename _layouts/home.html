@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <h1 class="page-heading">Repositories</h1>
+  
+  <ul class="post-list">
+    {% for repo in site.github.public_repositories %}
+      <li>
+        <span class="post-meta"></span>
+        
+        <h2>
+          <a class="post-link" href="{{ repo.html_url }}">{{ repo.full_name }}</a>
+        </h2>
+        <a class="github-button" href="https://github.com/{{ repo.full_name }}/fork" data-show-count="true" aria-label="Fork {{ repo.full_name }} on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/{{ repo.full_name }}" data-show-count="true" aria-label="Star {{ repo.full_name }} on GitHub">Star</a>
+        <div>{{ repo.description }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
