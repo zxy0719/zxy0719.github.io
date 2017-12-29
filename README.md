@@ -1,8 +1,13 @@
-# prateekkumarweb.github.io
+# Theme to display Github Repositories
 
-Github pages site to list all the public repositories by me.
+This a jekyll theme to showcase your public github repositories.
 
-Hosted at [https://prateekkumarweb.github.io](https://prateekkumarweb.github.io).
+## Screenshot
+
+![Demo Screenshot](screenshot.png)
+
+My public repositories can be seen at
+[https://prateekkumarweb.github.io](https://prateekkumarweb.github.io).
 
 Boostrap theme : [https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio](https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio).
 
