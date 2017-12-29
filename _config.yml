@@ -1,11 +1,15 @@
-title: Github repositories by Prateek Kumar
+title: Prateek Kumar - Open Source
 email: prateek@prateekkumar.in
 description: >- # this means to ignore newlines until "baseurl:"
   This website contains list of all the open source repositories on github by Prateek Kumar.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://prateekkumarweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+about_url: https://prateekkumar.in
 twitter_username: prateekkumarweb
 github_username: prateekkumarweb
+author: Prateek Kumar
+lang: en-IN
+google_analytics: UA-89128710-4
 
 # Build settings
 markdown: kramdown
