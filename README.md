@@ -22,4 +22,4 @@ Boostrap theme : [https://github.com/BlackrockDigital/startbootstrap-3-col-portf
 [MIT](https://github.com/prateekkumarweb/prateekkumarweb.github.io/blob/master/LICENSE)
 
 ---
-Copyright &copy; 2017 Prateek Kumar
+Copyright &copy; 2017-2018 Prateek Kumar
