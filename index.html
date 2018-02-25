@@ -7,7 +7,8 @@ layout: default
 </h1>
 
 <div class="row">
-{% for repo in site.github.public_repositories %}
+{% assign repos = site.github.public_repositories | sort: 'stargazers_count' %}
+{% for repo in repos reversed %}
 <div class="col-lg-4 col-sm-6 portfolio-item">
   <div class="card h-100">
     <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
