@@ -11,6 +11,8 @@ author: Prateek Kumar
 lang: en-IN
 google_analytics: UA-89128710-4
 
+timezone: Asia/Kolkata
+
 # Build settings
 markdown: kramdown
 plugins:

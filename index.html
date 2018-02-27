@@ -15,8 +15,9 @@ layout: default
     <h5 class="card-header">
       {{ repo.name }}
       <span class="badge badge-light">{{ repo.language }}</span>
-      {% if repo.license %}<a href="https://spdx.org/licenses/{{ repo.license.spdx_id }}.html" target="_blank" class="badge badge-primary">
-      {{ repo.license.spdx_id }}</a>{% endif %}
+      {% if repo.license %}{% if repo.license.spdx_id %}
+      <a href="https://spdx.org/licenses/{{ repo.license.spdx_id }}.html" target="_blank" class="badge badge-primary">
+      {{ repo.license.spdx_id }}</a>{% endif %}{% endif %}
       {% if repo.archived %}<span class="badge badge-info">Archived</span>{% endif %}
     </h5>
     <div class="card-body">
