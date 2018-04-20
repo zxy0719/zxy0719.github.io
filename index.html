@@ -3,11 +3,11 @@ layout: default
 ---
 <!-- Page Heading -->
 <h1 class="my-4">{{ site.author }}
-<small>Github Repositories</small>
+<small>GitHub Repositories</small>
 </h1>
 
 <div class="row">
-{% assign repos = site.github.public_repositories | sort: 'stargazers_count' %}
+{% assign repos = site.github.public_repositories | sort: 'pushed_at' %}
 {% for repo in repos reversed %}
 <div class="col-lg-4 col-sm-6 portfolio-item">
   <div class="card h-100">
@@ -24,7 +24,7 @@ layout: default
       <a class="github-button" href="https://github.com/{{ repo.full_name }}/fork" data-show-count="true" aria-label="Fork {{ repo.full_name }} on GitHub">Fork</a>
       <a class="github-button" href="https://github.com/{{ repo.full_name }}" data-show-count="true" aria-label="Star {{ repo.full_name }} on GitHub">Star</a>
       <p class="card-text">{{ repo.description }}</p>
-      <a href="{{ repo.html_url }}" class="card-link">Github</a>
+      <a href="{{ repo.html_url }}" class="card-link">GitHub</a>
       {% if repo.homepage != "" %}<a href="{{ repo.homepage }}" class="card-link">Homepage</a>{% endif %}
     </div>
   </div>

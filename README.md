@@ -1,4 +1,4 @@
-# Theme to display Github Repositories
+# Theme to display GitHub Repositories
 
 This a jekyll theme to showcase your public github repositories.
 
@@ -15,7 +15,7 @@ Boostrap theme : [https://github.com/BlackrockDigital/startbootstrap-3-col-portf
 
 * Fork this repo and rename it to `your_username.github.io`.
 * Edit `_config.yml` file as required.
-* Host it using Github Pages(Settings -> Github Pages).
+* Host it using GitHub Pages(Settings -> GitHub Pages).
 
 ### LICENSE
 
