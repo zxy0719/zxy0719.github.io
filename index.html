@@ -13,18 +13,18 @@ layout: default
   <div class="card h-100">
     <!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
     <h5 class="card-header">
-      {{ repo.name }}
-      <span class="badge badge-light">{{ repo.language }}</span>
+      <a href="{{ repo.html_url  }}" style="color: black;" class="card-link">{{ repo.name }}</a>
+      <span class="badge badge-info">{{ repo.language }}</span>
       {% if repo.license %}{% if repo.license.spdx_id %}
       <a href="https://spdx.org/licenses/{{ repo.license.spdx_id }}.html" target="_blank" class="badge badge-primary">
       {{ repo.license.spdx_id }}</a>{% endif %}{% endif %}
-      {% if repo.archived %}<span class="badge badge-info">Archived</span>{% endif %}
+      {% if repo.archived %}<span class="badge badge-secondary">Archived</span>{% endif %}
     </h5>
     <div class="card-body">
       <a class="github-button" href="https://github.com/{{ repo.full_name }}/fork" data-show-count="true" aria-label="Fork {{ repo.full_name }} on GitHub">Fork</a>
       <a class="github-button" href="https://github.com/{{ repo.full_name }}" data-show-count="true" aria-label="Star {{ repo.full_name }} on GitHub">Star</a>
       <p class="card-text">{{ repo.description }}</p>
-      <a href="{{ repo.html_url }}" class="card-link">GitHub</a>
+      <!-- <a href="{{ repo.html_url }}" class="card-link">GitHub</a> -->
       {% if repo.homepage != "" %}<a href="{{ repo.homepage }}" class="card-link">Homepage</a>{% endif %}
     </div>
   </div>
