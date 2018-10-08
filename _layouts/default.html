@@ -90,8 +90,10 @@ body {
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; {{ 'now' | date: '%Y' }} {{ site.author }}<br>
-        <span class="small">Last updated: {{ 'now' | date_to_rfc822 }}</span></p>
+	<p class="m-0 text-center text-white">
+	  Copyright &copy; {{ 'now' | date: '%Y' }} <a href="{{ site.about_url }}" style="color:white;">{{ site.author }}</a><br>
+          <span class="small">Last updated: {{ 'now' | date_to_rfc822 }}</span>
+	</p>
       </div>
       <!-- /.container -->
     </footer>
