@@ -2,9 +2,7 @@
 layout: default
 ---
 <!-- Page Heading -->
-<h1 class="my-4">{{ site.author }}
-<small>GitHub Repositories</small>
-</h1>
+<h1 class="my-4">{{ site.author }}</h1>
 
 <div class="row">
 {% assign repos = site.github.public_repositories | sort: 'id' %}
@@ -25,7 +23,7 @@ layout: default
       <a class="github-button" href="https://github.com/{{ repo.full_name }}" data-show-count="true" aria-label="Star {{ repo.full_name }} on GitHub">Star</a>
       <p class="card-text">{{ repo.description }}</p>
       <!-- <a href="{{ repo.html_url }}" class="card-link">GitHub</a> -->
-      {% if repo.homepage != "" %}<a href="{{ repo.homepage }}" class="card-link">Homepage</a>{% endif %}
+      {% if repo.homepage and repo.homepage != "" %}<a href="{{ repo.homepage }}" class="card-link">Homepage</a>{% endif %}
     </div>
   </div>
 </div>
