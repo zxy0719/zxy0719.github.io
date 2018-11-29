@@ -9,7 +9,7 @@ This a jekyll theme to showcase your public github repositories.
 My public repositories can be seen at
 [https://prateekkumarweb.github.io](https://prateekkumarweb.github.io).
 
-Boostrap themes : [https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio](https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio), [https://www.creative-tim.com/product/argon-design-system](https://www.creative-tim.com/product/argon-design-system).
+Boostrap themes : https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio, https://blackrockdigital.github.io/startbootstrap-landing-page/.
 
 ## Create your own site
 
