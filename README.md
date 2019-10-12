@@ -2,7 +2,7 @@
 
 This a jekyll theme to showcase your public github repositories.
 
-Demo: [https://demo.prateekkumar.me](https://demo.prateekkumar.me).
+[Demo](https://prateekkumarweb.github.io/github-showcase-theme).
 
 Boostrap themes : https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio, https://blackrockdigital.github.io/startbootstrap-landing-page/.
 
@@ -15,7 +15,7 @@ Boostrap themes : https://github.com/BlackrockDigital/startbootstrap-3-col-portf
 
 ### LICENSE
 
-[MIT](https://github.com/prateekkumarweb/prateekkumarweb.github.io/blob/master/LICENSE)
+MIT
 
 ---
 Copyright &copy; 2017-2019 Prateek Kumar
