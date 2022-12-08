@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>小叮噹的叮叮噹商城</title>
+    <link rel="icon" href="/Users/yi/Desktop/html+css/img/分頁標題.ico" type="image/x-icon" />
+        <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        width: 100%;
+        height: 100px;
+        display: block;
+        
+    }
+    .header h1{
+        height: 100%;
+        -webkit-text-stroke: 0.8px black;
+        -webkit-text-fill-color: transparent;
+        font-family: 'SetoFont';
+        font-size: 32px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-image: url(/Users/yi/Desktop/html+css/img/background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .inline-block-nav{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .inline-block-nav a{
+        height: 100%;
+        display: table;
+        padding: 0px 20px;
+       
+    }
+    .inline-block-nav a li{
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        color:  #000;
+        font-family: 'SetoFont';
+        font-size: 16px;
+    }
+    .shop_introduce{
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #e9c88e;
+
+    }
+    .shop_introduce h4{
+        margin: 10px;
+     padding: 5px;
+        font-family: 'SetoFont';
+        font-size: 32px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .shop_introduce a{
+        margin: 0;
+     padding: 0;
+        height: 100px;
+        font-family: 'SetoFont';
+        display: flex;
+        text-align: center;
+        
+        justify-content:center;
+        background-color: #e9c88e;
+    }
+    .product{
+        width: 100%;
+        height: 1180px;
+        display: block;
+        background-color: #d7cab0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .product h5{
+        margin-top: 10px;
+        
+     padding: 5px;
+        font-family: 'SetoFont';
+        font-size: 26px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .product img{
+        width: 150px;
+        height: 180px;
+        display: block;
+        margin:auto
+    }
+    .product a{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'SetoFont';
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .size{
+        width: 100%;
+        height: 200px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: antiquewhite;
+        margin-top: 10px;
+    }
+    .size h5{
+        margin: 10px;
+     padding: 5px;
+        font-family: 'SetoFont';
+        font-size: 26px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .size table {
+        display: inline-table;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .size table td {
+        border: 0.8px solid #333;
+        width: 60px;
+    }
+    .size table thead{
+        background-color: #fbcdd6;
+        color: #000;
+    }
+    .fb{
+        background-color: #dbe4eb;
+    }
+    .form{
+        text-align: center;
+        height: auto;
+        display: block;
+        width: 100%;
+        font-family: 'SetoFont';
+        line-height: 1.5;
+    }
+    .form h6{
+        margin: 10px;
+     padding: 5px;
+        font-family: 'SetoFont';
+        font-size: 26px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: #dbe4eb;
+    }
+    .form a{
+        background-color: #dbe4eb;
+        font-family: 'SetoFont';
+    }
+    .fbb{
+        background-color: red;
+    }
+    .fbx{
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+   
+    <div class="header">
+        <h1 id="top">叮叮噹商城</h1>
+    </div>
+    <div class="inline-block-nav">
+        <a href="#top" ><li>首頁</li></a>
+        <a href="#shop_introduce"><li>商館介紹</li></a>
+        <a href="#product"><li>商品</li></a>
+        <a href="#size"><li>尺寸表</li></a>
+        <a href="#form"><li>訂購表單</li></a>
+    </div>
+    <div class="shop_introduce" >
+        <h4 id="shop_introduce">商館介紹</h4>
+        <a >嗨咿～ 歡迎來到叮叮噹商城 ヾ(*´∇`)ﾉ<br>
+            在這裡可以找到聖誕節的服裝<br>
+            慢慢挑慢慢選<br>
+            周年慶全館免運費!<br>
+            快來挑選吧>< </br></a>
+    </div>
+    <div class="product">
+        <h5 id="product">商品</h5>
+        <img class="img" src="/Users/yi/Desktop/html+css/img/product1.webp" >
+        <a>聖誕圖案落肩袖加絨內裏套頭衫</a>
+        <img class="img" src="/Users/yi/Desktop/html+css/img/product2.webp" >
+        <a>雙色聖誕圖案落肩袖運動衫</a>
+        <img class="img" src="/Users/yi/Desktop/html+css/img/product3.webp" >
+        <a>聖誕樹圖案落肩袖套頭毛衣</a>
+        <img class="img" src="/Users/yi/Desktop/html+css/img/product4.webp" >
+        <a>聖誕樹圖案保暖衛衣</a>
+        <img class="img" src="/Users/yi/Desktop/html+css/img/product5.webp" >
+        <a>聖誕圖案落肩T恤</a>
+    </div>
+    <div class="size" >
+        <h5 id="size">尺寸表</h5>
+        <table class="table" >
+            <thead>
+                <tr class="tr">
+                    <th >尺寸cm</th>
+                    <th >S</th>
+                    <th >M</th>
+                    <th >L</th>
+                    <th >XL</th>
+                    <th >XXL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr">
+                    <td>肩寬</td>
+                    <td>41</td>
+                    <td>43</td>
+                    <td>45</td>
+                    <td>47</td>
+                    <td>49</td>
+                </tr>
+                <tr class="tr">
+                    <td>長度</td>
+                    <td>72</td>
+                    <td>73</td>
+                    <td>74</td>
+                    <td>75</td>
+                    <td>76</td>
+                </tr>
+                <tr class="tr">
+                    <td>袖長</td>
+                    <td>62</td>
+                    <td>63</td>
+                    <td>64</td>
+                    <td>65</td>
+                    <td>66</td>
+                </tr>
+                <tr class="tr"> 
+                    <td>胸圍</td>
+                    <td>108</td>
+                    <td>112</td>
+                    <td>116</td>
+                    <td>120</td>
+                    <td>124</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="fb">
+        <form class="form" action="" method="post">
+            <h6 id="form">訂單</h6>
+            <a>訂購人資料</a>
+            <p>姓名<input name="name" type="text"></p>
+            <p>地址<input name="address" type="text"></p>
+            <br>
+            <a>商品選擇</a><br>
+            <select>
+                <option>聖誕圖案落肩袖加絨內裏套頭衫</option>
+                <option>雙色聖誕圖案落肩袖運動衫</option>
+                <option >聖誕樹圖案落肩袖套頭毛衣</option>
+                <option>聖誕樹圖案保暖衛衣</option>
+                <option value="5">聖誕圖案落肩T恤</option>
+            </select>
+            件數<input name="number" type="text"></p>
+            <br>
+            <p>付款方式</p>
+            <input type="radio" name="interest" value="html"> 貨到付款
+            <input type="radio" name="interest" value="css"> 信用卡
+            <input type="radio" name="interest" value="js"> Line Pay
+        
+            <p><input class="fbb" type="submit" value="取消">
+            <input class="fbx" type="submit" value="送出資料"></p>
+        
+        </form>
+    </div>
+
+</body>
+</html>
