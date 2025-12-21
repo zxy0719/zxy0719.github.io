@@ -46,6 +46,72 @@ tailwind.config = {
     900: "#1a6585", // 極深藍
     950: "#0f4055", // 接近黑色的深藍
   },
+        'pop-pink': {
+          50: '#fdf2f8',
+          100: '#ffe6f0',
+          200: '#fbcfe8',
+          300: '#f9a8d4',
+          400: '#f472b6',
+          500: '#ec4899', // 經典桃紅
+          600: '#db2777',
+          700: '#a87a9b',
+          800: '#a87a9b',
+          900: '#831843', // 深桃紅
+          950: '#500724',
+        },
+
+'grey': {
+    50: "#f8f8f8",  // 淺灰，接近白色
+    100: "#e0e0e0", // 柔和淺灰
+    200: "#c8c8c8", // 淺灰
+    300: "#b0b0b0", // 中淺灰
+    400: "#989898", // 中灰
+    500: "#808080", // 預設文字灰
+    600: "#686868", // 較深灰
+    700: "#505050", // 深灰
+    800: "#383838", // 更深灰，常用於正文
+    900: "#202020", // 極深灰，接近黑色
+    950: "#101010", // 最深灰
+  },
+orange: {
+    50: "#fff7ed",
+    100: "#ffedd5",
+    200: "#fed7aa",
+    300: "#fdba74",
+    400: "#fb923c",
+    500: "#f97316",
+    600: "#ea580c",
+    700: "#c2410c",
+    800: "#9a3412",
+    900: "#7c2d12",
+    950: "#431407",
+  },
+        pink: {
+          50: "#fdf2f8",
+          100: "#ffe6f0",
+          200: "#fbcfe8",
+          300: "#f9a8d4",
+          400: "#f472b6",
+          500: "#ec4899",
+          600: "#db2777",
+          700: "#a87a9b",
+          800: "#a87a9b",
+          900: "#831843",
+          950: "#500724",
+        },
+       
+        cream: {
+          50: "#fffdf5",
+          100: "#fff9e0",
+          200: "#fff3b0",
+          300: "#ffe77a",
+          400: "#ffda44",
+          500: "#ffc71f",
+          600: "#e6a500",
+          700: "#bf7e00",
+          800: "#9c6000",
+          900: "#7a4f00",
+        }
 
       }
     }
@@ -430,7 +496,7 @@ body {
         id="search-input"
         type="text"
         placeholder="搜尋歌曲、歌手或語言..."
-        class="w-full pr-[58px] sm:pr-[58px] px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-grey-300 focus:outline-none focus:ring-2 focus:ring-olive-moss-500 text-grey-700 text-sm sm:text-base"
+        class="w-full pr-[58px] sm:pr-[58px] px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-grey-300 focus:outline-none focus:ring-2 focus:ring-Blue-500 text-grey-700 text-sm sm:text-base"
       />
       <!-- 清除按鈕 -->
       <button id="search-clear" class="search-clear-button hidden" aria-label="清除搜尋">
@@ -469,7 +535,7 @@ body {
       </div>
       <button
         id="clear-categories"
-        class="clear-button w-24 ml-2 text-sm text-olive-moss-500 hover:text-olive-moss-600 font-medium px-2 py-1 bg-olive-moss-100 rounded-lg hover:bg-olive-moss-200 transition-colors disabled"
+        class="clear-button w-24 ml-2 text-sm text-Blue-500 hover:text-Blue-600 font-medium px-2 py-1 bg-Blue-100 rounded-lg hover:bg-Blue-200 transition-colors disabled
 >
         清除分類
       </button>
@@ -499,7 +565,7 @@ body {
     <p class="text-grey-500 mt-2">請確保Google Sheet格式正確，並且可以公開訪問</p>
     <button
       id="retry-button"
-      class="mt-4 px-4 py-2 bg-olive-moss-600 text-white rounded-lg hover:bg-olive-moss-700"
+      class="mt-4 px-4 py-2 bg-Blue-600 text-white rounded-lg hover:bg-Blue-700"
     >
       重試
     </button>
@@ -950,7 +1016,7 @@ function updateLanguageFilterUI() {
   Array.from(languages).sort().forEach(language => {
     const button = document.createElement('button');
     button.className = `px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg bg-grey-100 hover:bg-grey-200 text-grey-700 font-medium text-xs sm:text-sm transition-colors ${
-      currentLanguageFilter === language ? 'bg-olive-moss-600 text-white hover:bg-olive-moss-700' : ''
+      currentLanguageFilter === language ? 'bg-Blue-600 text-white hover:bg-Blue-700' : ''
     }`;
     button.textContent = language;
     button.addEventListener('click', () => {
@@ -1039,10 +1105,10 @@ sortedGroups.forEach(groupName => {
     button.className = `
       px-2 py-1.5 rounded-lg font-medium flex items-center text-base transition-all duration-200
       ${selectedCategories.has(category)
-        ? 'bg-olive-moss-500 text-grey-100 hover:bg-olive-moss-600 shadow-md'
+        ? 'bg-Blue-500 text-grey-100 hover:bg-Blue-600 shadow-md'
         : isDisabled
         ? 'bg-grey-100 text-grey-200 cursor-not-allowed' // 禁用時的樣式
-        : 'bg-olive-moss-100 hover:bg-olive-moss-200 text-olive-moss-700' // 正常樣式
+        : 'bg-Blue-100 hover:bg-Blue-200 text-Blue-700' // 正常樣式
       }
     `;
     
@@ -1062,7 +1128,7 @@ sortedGroups.forEach(groupName => {
         ? 'bg-white/30 text-white'
         : isDisabled
         ? 'bg-grey-200 text-grey-300' // 新增：如果按鈕被禁用，使用灰色樣式
-        : 'bg-olive-moss-200 text-olive-moss-800'
+        : 'bg-Blue-200 text-Blue-800'
       }`;
     countSpan.textContent = count;
     button.appendChild(countSpan);
@@ -1088,7 +1154,7 @@ function updateSelectedCategoriesUI() {
   if (selectedCategories.size > 0) {
     Array.from(selectedCategories).forEach(category => {
       const tag = document.createElement('div');
-      tag.className = 'filter-tag bg-olive-moss-200 text-olive-moss-800 cursor-pointer text-xs px-2 py-1 rounded-full flex items-center border-0';
+      tag.className = 'filter-tag bg-Blue-200 text-Blue-800 cursor-pointer text-xs px-2 py-1 rounded-full flex items-center border-0';
       
       const span = document.createElement('span');
       span.textContent = category;
@@ -1151,7 +1217,7 @@ function updateSongsUI() {
 // 創建歌曲卡片
 function createSongCard(song) {
   const card = document.createElement('div');
-  card.className = `song-card bg-white rounded-lg p-2.5 border-l-4 ${getLanguageColor(song.language)} hover:border-olive-moss-700 relative transition-all duration-300 hover:-translate-y-1`;
+  card.className = `song-card bg-white rounded-lg p-2.5 border-l-4 ${getLanguageColor(song.language)} hover:border-Blue-700 relative transition-all duration-300 hover:-translate-y-1`;
 
   // 標題
   const title = document.createElement('h3');
@@ -1187,8 +1253,8 @@ function createSongCard(song) {
         const tag = document.createElement('span');
         tag.className = `inline-block px-1 py-0.5 text-xs rounded-full mr-1 mb-0.5 cursor-pointer ${
           selectedCategories.has(category)
-            ? 'bg-olive-moss-200 text-olive-moss-800 font-medium'
-            : 'bg-olive-moss-100 text-olive-moss-800'
+            ? 'bg-Blue-200 text-Blue-800 font-medium'
+            : 'bg-Blue-100 text-Blue-800'
         }`;
         tag.textContent = category;
         tag.addEventListener('click', () => {
@@ -1220,7 +1286,7 @@ function createSongCard(song) {
   copyButtonContainer.className = 'absolute top-9 right-3';
 
   const copyButton = document.createElement('button');
-  copyButton.className = 'p-2 bg-olive-moss-200 hover:bg-olive-moss-100 hover:text-[#4a8c99] text-[#4a8c99] rounded-full focus:outline-none shadow-md transition-all duration-200 hover:-translate-y-1 active:scale-95';
+  copyButton.className = 'p-2 bg-Blue-200 hover:bg-Blue-100 hover:text-[#4a8c99] text-[#4a8c99] rounded-full focus:outline-none shadow-md transition-all duration-200 hover:-translate-y-1 active:scale-95';
 
   const copyIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   copyIcon.setAttribute('class', 'h-8 w-8');
@@ -1328,17 +1394,17 @@ function getLanguageColor(language) {
   if (!language) return 'border-grey-500';
 
   const colors = [
-    'border-olive-moss-500',
-    'border-olive-moss-500',
+    'border-Blue-500',
+    'border-Blue-500',
     'border-grey-500',
-    'border-olive-moss-400',
-    'border-olive-moss-400',
+    'border-Blue-400',
+    'border-Blue-400',
     'border-grey-400',
-    'border-olive-moss-600',
-    'border-olive-moss-600',
+    'border-Blue-600',
+    'border-Blue-600',
     'border-grey-600',
-    'border-olive-moss-700', // 增加一些深色調選擇
-    'border-olive-moss-700',
+    'border-Blue-700', // 增加一些深色調選擇
+    'border-Blue-700',
   ];
 
   let hash = 0;
@@ -1355,15 +1421,15 @@ function getLanguageClass(language) {
   if (!language) return 'bg-grey-100 text-grey-800';
 
   const classes = [
-    'bg-olive-moss-100 text-olive-moss-800',
-    'bg-olive-moss-100 text-olive-moss-800',
-    'bg-olive-moss-200 text-olive-moss-800',
-    'bg-olive-moss-200 text-olive-moss-800',
-    'bg-olive-moss-100 text-olive-moss-700',
-    'bg-olive-moss-100 text-olive-moss-700',
-    'bg-olive-moss-200 text-olive-moss-700',
-    'bg-olive-moss-200 text-olive-moss-700',
-    'bg-olive-moss-100 text-olive-moss-900',
+    'bg-Blue-100 text-Blue-800',
+    'bg-Blue-100 text-Blue-800',
+    'bg-Blue-200 text-Blue-800',
+    'bg-Blue-200 text-Blue-800',
+    'bg-Blue-100 text-Blue-700',
+    'bg-Blue-100 text-Blue-700',
+    'bg-Blue-200 text-Blue-700',
+    'bg-Blue-200 text-Blue-700',
+    'bg-Blue-100 text-Blue-900',
   ];
 
   let hash = 0;
